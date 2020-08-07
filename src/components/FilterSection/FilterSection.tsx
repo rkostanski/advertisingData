@@ -3,14 +3,12 @@ import { EInput } from '../../enums/EInput';
 import { IFilterSection } from './IFilterSection';
 import './FilterSectionStyles.scss'
 
-type TOptions = string;
-
 export const FilterSection = (props: IFilterSection):JSX.Element => {
 
   const {filters} = props;
 
-  const createSelectOptions = (data: Set<string>): TOptions[] => {
-    const options: TOptions[] = [];
+  const createSelectOptions = (data: Set<string>): string[] => {
+    const options: string[] = [];
 
     data.forEach((filter: string) => options.push(filter))
 

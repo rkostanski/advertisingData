@@ -1,7 +1,9 @@
 import React from 'react';
-import './App.css';
+
+import './App.scss';
 import { IFilters } from './interfaces/IFilters';
 
+import { ChartSection } from './components/ChartSection/ChartSection';
 import { EInput } from './enums/EInput';
 import { FilterSection } from './components/FilterSection/FilterSection';
 import { advertisingDataService } from './services/advertisingDataService';
@@ -29,9 +31,13 @@ function App() {
     }
   }
 
+
   return (
-    <div className="App">
-      <FilterSection filters={setFiltersData(advertisingData, filters)}></FilterSection>
+    <div className="app">
+      <div className="app-wrapper">
+        <FilterSection filters={setFiltersData(advertisingData, filters)} />
+        <ChartSection data={advertisingData} />
+      </div>
     </div>
   );
 }
