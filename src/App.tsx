@@ -1,24 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { IFilters } from './interfaces/IFilters';
+
+import { EInput } from './enums/EInput';
+import { FilterSection } from './components/FilterSection/FilterSection';
+import { advertisingDataService } from './services/advertisingDataService';
+import { IAdvertisingDBData } from './interfaces/IAdvertisingDBData';
+import { setFiltersData } from './utils/helpers';
 
 function App() {
+  const [advertisingData, setAdvertisingData] = React.useState<IAdvertisingDBData[]>([])
+
+
+  React.useEffect(() => {
+    setAdvertisingData(advertisingDataService.getData())
+  }, []);
+
+  const filters: IFilters = {
+    datasource: {
+      label: 'Datasource',
+      type: EInput.MULTISELECT,
+      data: new Set(),
+    },
+    campaign: {
+      label: 'Campaign',
+      type: EInput.SELECT,
+      data: new Set(),
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FilterSection filters={setFiltersData(advertisingData, filters)}></FilterSection>
     </div>
   );
 }
