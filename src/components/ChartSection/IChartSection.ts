@@ -1,5 +1,7 @@
 import { IAdvertisingDBData } from '../../interfaces/IAdvertisingDBData';
 
 export interface IChartSection {
-  data: IAdvertisingDBData[];
+  data: Map<string, IAdvertisingDBData[]>;
+  datasourceFilter: string[];
+  campaignFilter: string[];
 }
