@@ -6,10 +6,16 @@
   background-color: $clr-blue-100;
   display: flex;
   flex-direction: column;
+  flex-basis: 35%;
+  padding: 20px;
 
   &-row {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+  }
+
+  select {
+    margin: 20px 0;
   }
 }

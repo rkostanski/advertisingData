@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders main page 1`] = `
+<div>
+  <div>
+    <div
+      class="recharts-wrapper"
+      style="position: relative; cursor: default; width: 500px; height: 300px;"
+    >
+      <svg
+        class="recharts-surface"
+        height="300"
+        version="1.1"
+        viewBox="0 0 500 300"
+        width="500"
+      >
+        <defs>
+          <clippath
+            id="recharts3-clip"
+          >
+            <rect
+              height="215"
+              width="390"
+              x="80"
+              y="50"
+            />
+          </clippath>
+        </defs>
+        <g
+          class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"
+        >
+          <line
+            class="recharts-cartesian-axis-line"
+            fill="none"
+            height="30"
+            stroke="#666"
+            width="390"
+            x="80"
+            x1="80"
+            x2="470"
+            y="265"
+            y1="265"
+            y2="265"
+          />
+          <g
+            class="recharts-cartesian-axis-ticks"
+          >
+            <g
+              class="recharts-layer recharts-cartesian-axis-tick"
+            >
+              <line
+                class="recharts-cartesian-axis-tick-line"
+                fill="none"
+                height="30"
+                stroke="#666"
+                width="390"
+                x="80"
+                x1="275"
+                x2="275"
+                y="265"
+                y1="271"
+                y2="265"
+              />
+              <text
+                class="recharts-text recharts-cartesian-axis-tick-value"
+                fill="#666"
+                height="30"
+                stroke="none"
+                text-anchor="middle"
+                width="390"
+                x="275"
+                y="273"
+              >
+                <tspan
+                  dy="0.71em"
+                  x="275"
+                >
+                  07.05.2019
+                </tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+        <g
+          class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
+        >
+          <line
+            class="recharts-cartesian-axis-line"
+            fill="none"
+            height="215"
+            stroke="#666"
+            width="60"
+            x="20"
+            x1="80"
+            x2="80"
+            y="50"
+            y1="50"
+            y2="265"
+          />
+          <g
+            class="recharts-cartesian-axis-ticks"
+          >
+            <g
+              class="recharts-layer recharts-cartesian-axis-tick"
+            >
+              <line
+                class="recharts-cartesian-axis-tick-line"
+                fill="none"
+                height="215"
+                stroke="#666"
+                width="60"
+                x="20"
+                x1="74"
+                x2="80"
+                y="50"
+                y1="265"
+                y2="265"
+              />
+              <text
+                class="recharts-text recharts-cartesian-axis-tick-value"
+                fill="#666"
+                height="215"
+                stroke="none"
+                text-anchor="end"
+                width="60"
+                x="72"
+                y="265"
+              >
+                <tspan
+                  dy="0.355em"
+                  x="72"
+                >
+                  0
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="recharts-layer recharts-cartesian-axis-tick"
+            >
+              <line
+                class="recharts-cartesian-axis-tick-line"
+                fill="none"
+                height="215"
+                stroke="#666"
+                width="60"
+                x="20"
+                x1="74"
+                x2="80"
+                y="50"
+                y1="211.25"
+                y2="211.25"
+              />
+              <text
+                class="recharts-text recharts-cartesian-axis-tick-value"
+                fill="#666"
+                height="215"
+                stroke="none"
+                text-anchor="end"
+                width="60"
+                x="72"
+                y="211.25"
+              >
+                <tspan
+                  dy="0.355em"
+                  x="72"
+                >
+                  500
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="recharts-layer recharts-cartesian-axis-tick"
+            >
+              <line
+                class="recharts-cartesian-axis-tick-line"
+                fill="none"
+                height="215"
+                stroke="#666"
+                width="60"
+                x="20"
+                x1="74"
+                x2="80"
+                y="50"
+                y1="157.5"
+                y2="157.5"
+              />
+              <text
+                class="recharts-text recharts-cartesian-axis-tick-value"
+                fill="#666"
+                height="215"
+                stroke="none"
+                text-anchor="end"
+                width="60"
+                x="72"
+                y="157.5"
+              >
+                <tspan
+                  dy="0.355em"
+                  x="72"
+                >
+                  1000
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="recharts-layer recharts-cartesian-axis-tick"
+            >
+              <line
+                class="recharts-cartesian-axis-tick-line"
+                fill="none"
+                height="215"
+                stroke="#666"
+                width="60"
+                x="20"
+                x1="74"
+                x2="80"
+                y="50"
+                y1="103.75"
+                y2="103.75"
+              />
+              <text
+                class="recharts-text recharts-cartesian-axis-tick-value"
+                fill="#666"
+                height="215"
+                stroke="none"
+                text-anchor="end"
+                width="60"
+                x="72"
+                y="103.75"
+              >
+                <tspan
+                  dy="0.355em"
+                  x="72"
+                >
+                  1500
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="recharts-layer recharts-cartesian-axis-tick"
+            >
+              <line
+                class="recharts-cartesian-axis-tick-line"
+                fill="none"
+                height="215"
+                stroke="#666"
+                width="60"
+                x="20"
+                x1="74"
+                x2="80"
+                y="50"
+                y1="50"
+                y2="50"
+              />
+              <text
+                class="recharts-text recharts-cartesian-axis-tick-value"
+                fill="#666"
+                height="215"
+                stroke="none"
+                text-anchor="end"
+                width="60"
+                x="72"
+                y="50"
+              >
+                <tspan
+                  dy="0.355em"
+                  x="72"
+                >
+                  2000
+                </tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+        <g
+          class="recharts-layer recharts-line"
+        >
+          <g
+            class="recharts-layer recharts-line-dots"
+          >
+            <circle
+              class="recharts-dot recharts-line-dot"
+              cx="275"
+              cy="259.3025"
+              fill="#fff"
+              height="215"
+              r="3"
+              stroke="#8884d8"
+              stroke-width="1"
+              width="390"
+            />
+          </g>
+        </g>
+        <g
+          class="recharts-layer recharts-line"
+        >
+          <g
+            class="recharts-layer recharts-line-dots"
+          >
+            <circle
+              class="recharts-dot recharts-line-dot"
+              cx="275"
+              cy="67.52250000000001"
+              fill="#fff"
+              height="215"
+              r="3"
+              stroke="#82ca9d"
+              stroke-width="1"
+              width="390"
+            />
+          </g>
+        </g>
+      </svg>
+      <div
+        class="recharts-legend-wrapper"
+        style="position: absolute; width: 450px; height: auto; left: 20px; bottom: 5px;"
+      >
+        <ul
+          class="recharts-default-legend"
+          style="padding: 0px; margin: 0px; text-align: center;"
+        >
+          <li
+            class="recharts-legend-item legend-item-0"
+            style="display: inline-block; margin-right: 10px;"
+          >
+            <svg
+              class="recharts-surface"
+              height="14"
+              style="display: inline-block; vertical-align: middle; margin-right: 4px;"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="14"
+            >
+              <path
+                class="recharts-legend-icon"
+                d="M0,16h10.666666666666666
+            A5.333333333333333,5.333333333333333,0,1,1,21.333333333333332,16
+            H32M21.333333333333332,16
+            A5.333333333333333,5.333333333333333,0,1,1,10.666666666666666,16"
+                fill="none"
+                stroke="#8884d8"
+                stroke-width="4"
+              />
+            </svg>
+            <span
+              class="recharts-legend-item-text"
+            >
+              clicks
+            </span>
+          </li>
+          <li
+            class="recharts-legend-item legend-item-1"
+            style="display: inline-block; margin-right: 10px;"
+          >
+            <svg
+              class="recharts-surface"
+              height="14"
+              style="display: inline-block; vertical-align: middle; margin-right: 4px;"
+              version="1.1"
+              viewBox="0 0 32 32"
+              width="14"
+            >
+              <path
+                class="recharts-legend-icon"
+                d="M0,16h10.666666666666666
+            A5.333333333333333,5.333333333333333,0,1,1,21.333333333333332,16
+            H32M21.333333333333332,16
+            A5.333333333333333,5.333333333333333,0,1,1,10.666666666666666,16"
+                fill="none"
+                stroke="#82ca9d"
+                stroke-width="4"
+              />
+            </svg>
+            <span
+              class="recharts-legend-item-text"
+            >
+              impressions
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="recharts-tooltip-wrapper"
+        style="transform: translate(undefinedpx, undefinedpx); pointer-events: none; visibility: hidden; position: absolute; top: 0px;"
+      >
+        <div
+          class="recharts-default-tooltip"
+          style="margin: 0px; padding: 10px; background-color: rgb(255, 255, 255); border: 1px solid #ccc; white-space: nowrap;"
+        >
+          <p
+            class="recharts-tooltip-label"
+            style="margin: 0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

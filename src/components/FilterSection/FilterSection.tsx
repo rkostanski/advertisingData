@@ -39,8 +39,8 @@ export const FilterSection = (props: IFilterSection): JSX.Element => {
     const selectOptions = createSelectOptions(filters[filterType].data);
 
     return (
-      <select multiple={isMulti} name={filterType} onChange={updateFilter}>
-        {selectOptions.map((category: string) => <option key={category} value={category}>{category}</option>)}
+      <select data-testid={`${filterType}-select`} multiple={isMulti} name={filterType} onChange={updateFilter}>
+        {selectOptions.map((category: string) => <option key={category} value={category} data-testid={`${filterType}-option`}>{category}</option>)}
       </select>
     )
   }
@@ -49,7 +49,7 @@ export const FilterSection = (props: IFilterSection): JSX.Element => {
     <div className="sidebar">
       Filter dimension values:
       <section className="sidebar-row">
-        Datasource: [clear]
+        Datasource:
 
         {renderFilter(EFilterType.datasource, filters.datasource.type)}
       </section>
@@ -59,12 +59,12 @@ export const FilterSection = (props: IFilterSection): JSX.Element => {
         {renderFilter(EFilterType.campaign, filters.campaign.type)}
       </section>
 
-      <button onClick={applyFilters}>Apply Filters</button>
+      <button onClick={applyFilters} data-testid='apply'>Apply Filters</button>
     </div>
   )
 }
 
-const mapDispatchToProps = (dispatch: any) => ({
+const mapDispatchToProps = (dispatch: Function) => ({
   updateFilter: (datasourceFilter: string[], campaignFilter: string[]) => dispatch(updateFilter(datasourceFilter, campaignFilter))
 })
 

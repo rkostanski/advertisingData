@@ -1,0 +1,13 @@
+[{
+  "date": "07.05.2019",
+  "datasource": "Google Analytics",
+  "campaign": "New General Campaign - NOR - Desktop",
+  "clicks": 6,
+  "impressions": 81
+}, {
+  "date": "08.05.2019",
+  "datasource": "Google Adwords",
+  "campaign": "New General Campaign - UK - Desktop",
+  "clicks": 53,
+  "impressions": 1837
+}]
