@@ -1,5 +1,5 @@
 import {UPDATE_FILTERS} from './filtersActionTypes';
-import { TUpdateAction } from './types';
+import { TUpdateAction } from './TFilters';
 
 export const updateFilter = (
   datasourceFilter: string[], campaignFilter: string[]

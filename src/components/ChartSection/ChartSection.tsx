@@ -3,8 +3,10 @@ import {
   LineChart, Line, XAxis, YAxis, Legend, Tooltip,
 } from 'recharts';
 import { connect } from 'react-redux';
+import { isEqual } from 'lodash';
+
 import { filterData, calculateStats } from './helpers';
-import { IFilterReducer } from '../../stores/filters/interfaces';
+import { IFilterReducer } from '../../stores/filters/IFilters';
 import { IChartSection, IChartData } from './IChartSection';
 
 export const ChartSection = (props: IChartSection): JSX.Element | null => {
@@ -29,7 +31,7 @@ export const ChartSection = (props: IChartSection): JSX.Element | null => {
 
     setData(chartData);
     setLoading(false);
-  }, [props.data, props.datasourceFilter, props.campaignFilter]);
+  }, [props.datasourceFilter, props.campaignFilter]);
 
   const filtersSet = (filters: string[]):boolean => !!filters.length;
 
@@ -61,4 +63,15 @@ const mapStateToProps = (state: { filters: IFilterReducer }) => ({
   campaignFilter: state.filters.campaign,
 })
 
-export default connect(mapStateToProps)(ChartSection)
+const options = {
+  areStatesEqual: (next: {filters: IFilterReducer}, prev: {filters: IFilterReducer}) => {
+    return (
+      isEqual(prev.filters, next.filters)
+    );
+  },
+};
+
+export default connect(mapStateToProps, undefined, undefined, options)(ChartSection)
+
+
+

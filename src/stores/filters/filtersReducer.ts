@@ -1,6 +1,6 @@
 import { UPDATE_FILTERS } from './filtersActionTypes';
-import { TUpdateAction } from './types';
-import { IFilterReducer } from './interfaces';
+import { TUpdateAction } from './TFilters';
+import { IFilterReducer } from './IFilters';
 
 let localState:IFilterReducer = {
   datasource: [],

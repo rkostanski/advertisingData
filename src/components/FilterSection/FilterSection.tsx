@@ -47,17 +47,20 @@ export const FilterSection = (props: IFilterSection): JSX.Element => {
 
   return (
     <div className="sidebar">
-      Filter dimension values:
-      <section className="sidebar-row">
-        Datasource:
+      {filters.datasource.data.size !== 0 && (
+        <section className="sidebar-row">
+          Datasource:
 
-        {renderFilter(EFilterType.datasource, filters.datasource.type)}
-      </section>
+          {renderFilter(EFilterType.datasource, filters.datasource.type)}
+        </section>
+      )}
 
+    {filters.campaign.data.size !== 0 && (
       <section className="sidebar-row">
         Campaign:
         {renderFilter(EFilterType.campaign, filters.campaign.type)}
       </section>
+    )}
 
       <button onClick={applyFilters} data-testid='apply'>Apply Filters</button>
     </div>
