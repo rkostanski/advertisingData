@@ -12,14 +12,17 @@ import { IChartSection, IChartData } from './IChartSection';
 export const ChartSection = (props: IChartSection): JSX.Element | null => {
   const [loading, setLoading] = React.useState<boolean>(true);
   const [data, setData] = React.useState<IChartData[]>([]);
+  const {datasourceFilter, campaignFilter, initialData } = props;
+
+  const filtersSet = (filters: string[]):boolean => filters.length !== 0;
 
   React.useEffect(() => {
     let chartData: IChartData[] = [];
-    props.data.forEach((data, key) => {
+    initialData.forEach((data, key) => {
 
       let eventsCollection = data;
-      if(filtersSet([...props.datasourceFilter, ...props.campaignFilter])) {
-        eventsCollection = filterData(data, props.datasourceFilter, props.campaignFilter);
+      if(filtersSet([...datasourceFilter, ...campaignFilter])) {
+        eventsCollection = filterData(data, datasourceFilter, campaignFilter);
       }
 
       const preparedChartData = {
@@ -31,9 +34,8 @@ export const ChartSection = (props: IChartSection): JSX.Element | null => {
 
     setData(chartData);
     setLoading(false);
-  }, [props.datasourceFilter, props.campaignFilter]);
+  }, [datasourceFilter, campaignFilter, initialData]);
 
-  const filtersSet = (filters: string[]):boolean => !!filters.length;
 
   return (
     <div>

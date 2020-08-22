@@ -6,7 +6,7 @@ export interface IChartData {
   impressions: number;
 }
 export interface IChartSection {
-  data: Map<string, IAdvertisingDBData[]>;
+  initialData: Map<string, IAdvertisingDBData[]>;
   datasourceFilter: string[];
   campaignFilter: string[];
 };

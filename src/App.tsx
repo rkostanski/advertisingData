@@ -4,7 +4,7 @@ import ChartSection from './components/ChartSection/ChartSection';
 import FilterSection from './components/FilterSection/FilterSection';
 import store from './stores/rootStore';
 import { advertisingDataService } from './services/advertisingDataService';
-import { setFiltersData } from './utils/helpers';
+import { setFilters } from './utils/helpers';
 import { mapAdvertisingData } from './utils/transformators';
 import { IAdvertisingDBData } from './interfaces/IAdvertisingDBData';
 import { IFilters } from './interfaces/IFilters';
@@ -20,7 +20,7 @@ function App() {
     const mappedAdvertisingData = mapAdvertisingData(advertisingData);
 
     setAdvertisingData(mappedAdvertisingData);
-    setAvailableFilters({ ...setFiltersData(advertisingData, availableFilters) });
+    setAvailableFilters({ ...setFilters(advertisingData, availableFilters) });
   }, []);
 
   return (
@@ -28,7 +28,7 @@ function App() {
       <div className="app">
         <div className="app-wrapper">
           <FilterSection filters={availableFilters} />
-          {advertisingData.size !== 0 && (<ChartSection data={advertisingData} />)}
+          {advertisingData.size !== 0 && (<ChartSection initialData={advertisingData} />)}
         </div>
       </div>
     </Provider>

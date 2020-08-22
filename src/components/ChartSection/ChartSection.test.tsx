@@ -4,12 +4,12 @@ import { ChartSection } from './ChartSection';
 import { filterData, calculateStats } from './helpers';
 import mockedData from '../../__mocks__/advertisingData.json';
 
-const data = new Map();
-data.set(mockedData[0].date, [mockedData[0]])
-data.set(mockedData[0].date, [mockedData[1]])
+const initialData = new Map();
+initialData.set(mockedData[0].date, [mockedData[0]])
+initialData.set(mockedData[0].date, [mockedData[1]])
 
 const props = {
-  data: data,
+  initialData: initialData,
   datasourceFilter: [],
   campaignFilter: [],
 }
