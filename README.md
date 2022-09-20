@@ -1,8 +1,3 @@
-## Working live demo
-Open [http://koztek.usermd.net/](http://koztek.usermd.net/) to view it in the browser.
-
-## 
-## 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
